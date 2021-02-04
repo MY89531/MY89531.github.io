@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- 网站标题 -->
+    <title>桥梁健康监测系统-综合桥梁健康检测-实时数据、专业分析！</title>
+    <!-- 网站说明 -->
+    <meta name="discription" content="专业的综合桥梁健康监测系统，监测风向、风速、水位、温度、应力应变、沉降扰度等数十个参数。为您提供优质实时监测服务">
+    <!-- 网站关键词 -->
+    <meta name="keywords" content="桥梁健康,监测系统,桥梁状况评定,信息管理,预警提醒,即时分析">
+    <!-- 网站favicon图标 -->
+    <link rel="shortcut icon" href="logo.ico" />
+    <!-- 引入初始化样式文件 -->
+    <!-- 如果需要多种样式，可以用以下方式
+         <link href="default.css" rel="stylesheet" title="Default Style">
+         <link href="fancy.css" rel="alternate stylesheet" title="Fancy">
+         <link href="basic.css" rel="alternate stylesheet" title="Basic"> -->
+    <link rel="stylesheet" href="css/index.css">
+    <!-- 引入公共样式文件 -->
+    <!-- <link rel="stylesheet" href="css/common.css"> -->
+    
+</head>
+
+<body>
+    <div class="app">
+        <div id="page" class="container view">
+    <!-- 头部的盒子 -->
+    <header>
+        <!-- 中间的字，这里不需要，可以注释掉 -->
+        <!-- <h1>数据可视化-ECharts</h1> -->
+        <div class="head_left">
+            <div class="time"></div>
+            <!-- 显示实时时间 -->
+            <script>
+                var t = null;
+                t = setTimeout(time, 1000);//開始运行
+                function time() {
+                    clearTimeout(t);//清除定时器
+                    dt = new Date();
+                    var y = dt.getFullYear();
+                    var mt = dt.getMonth() + 1;
+                    var day = dt.getDate();
+                    var h = dt.getHours();//获取时
+                    var m = dt.getMinutes();//获取分
+                    var s = dt.getSeconds();//获取秒
+                    document.querySelector(".time").innerHTML = + y + "年" + mt + "月" + day + "-" + h + "时" + m + "分" + s + "秒";
+                    t = setTimeout(time, 1000); //设定定时器，循环运行     
+                }
+            </script>
+            </div>
+        <div class="head_right">
+            <div class="head_menu"></div>
+            <div class="head_exit"></div>
+        </div>
+    </header>
+
+    <!-- 页面主体部分 -->
+    <div class="main">
+        <!-- 左边 -->
+        <div class="left">
+            <div class="weather_box">
+                <img src="http://tq.daodaoim.com//tianqiapi/skin/pitaya/yin.png">
+                <p>12℃</p>
+                <p>晴 西北风 1级</p>
+            </div>
+
+            <div class="warning_box">
+                <div class="warning_title">告警管理</div>
+            </div>
+
+            <div class="station_box">
+                <div class="station_title">站点信息</div>
+            </div>
+        </div>
+        <!-- 中间 -->
+        <div class="center">
+            <div id="map">
+                <div class="el-vue-amap-container" id="mapcointainer" style="height: 100%;"></div>
+                
+            </div>
+            <div class="real_box">
+                <div class="real_title">实时报表</div>
+            </div>
+        </div>
+        <!-- 右边 -->
+        <div class="right">
+            <div class="sys_box">
+                <div class="sys_title">系统公告</div>
+            </div>
+            <div class="data_box">
+                <div class="data_title">数据概览—温度</div>
+            </div>
+            <div class="summary_box">
+                <div class="summary_title">平台概述</div>
+            </div>
+        </div>
+    </div>
+
+            <!-- 页面底部 -->
+            <div class="bottom">
+                重启芯思迈有限公司
+            </div>
+
+            <!-- flexible.js文件————适配 不需要可以注释掉-->
+            <script src="js/flexible.js"></script>
+
+        </div>
+    </div>
+
+</body>
+</html>

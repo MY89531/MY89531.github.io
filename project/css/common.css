@@ -1,0 +1,68 @@
+/* 版心样式 */
+
+/* .w{
+    width: 1050px;
+    margin: 0 auto;
+} */
+/* .app, .view{
+    display: flex;
+    width: 100%;
+} */
+/* .app{
+    flex: 1;
+    overflow: hidden;
+} */
+/* .container{
+    color: #fff;
+    background: url(http://39.97.111.250:8100/5c66df9b58b49ea766ae61fff094c90f.jpg);
+    background-attachment: fixed;
+    overflow: scroll;
+    display: flex;
+} */
+/* .view{
+    flex-direction: column;
+    flex: 1;
+    font-family: Helvetica, sans-serif;
+} */
+/* .head{
+    min-width: 1050px;
+    height: 100px;
+    background:url(http://39.97.111.250:8100/7fe576fd3462cd8570ee0ce0a6e1d02e.gif)no-repeat top ;
+    background-size: 100% 100%;
+    position: relative;
+} */
+/* .head_left{
+    position: absolute;
+    top: 0;
+    left: 20px;
+    height: 80px;
+    line-height: 75px;
+    width: 400px;
+    background: url(http://39.97.111.250:8100/b0a6a4c4242deec097e607133165fc8b.png) no-repeat;
+    background-size: contain;
+    text-align: left;
+} */
+/* .head_right{
+    margin-top: 10px;
+    height: 60px;
+    width: 300px;
+    float: right;
+    display: flex;
+    justify-content: center;
+} */
+/* .head_menu{
+    height: 60px;
+    background: url(http://39.97.111.250:8100/3f34ae11a5de3706170c9d10029565b9.png);
+    background-size: contain;
+} */
+/* .head_exit{
+    height: 70px;
+    background: url(http://39.97.111.250:8100/12d6c85a080d3f9e594a893960bc1598.png) no-repeat;
+    background-size: contain;
+} */
+/* 快捷导航模块 */
+/* .shortcut{
+    min-width: 1050px;
+    height: 100px;
+    background: url(http://39.97.111.250:8100/7fe576fd3462cd8570ee0ce0a6e1d02e.gif);
+} */
